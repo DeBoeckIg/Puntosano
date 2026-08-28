@@ -17,6 +17,6 @@ export const deleteCategory=(id:number|string)=>api(`/admin/categories/${id}`,{m
 export async function getAdminProducts(){return list(await api<unknown>('/admin/products'),'products').map((p:any)=>({...p,categoryId:p.categoryId??p.category_id,priceArs:Number(p.priceArs??p.price_ars),stockQuantity:Number(p.stockQuantity??p.stock_quantity??0),imageUrl:p.imageUrl??p.image_url??'',available:Number(p.stockQuantity??p.stock_quantity??0)>0}));}
 export const createProduct=(p:unknown)=>api('/admin/products',{method:'POST',body:JSON.stringify(p)});
 export const updateProduct=(id:number|string,p:Record<string,unknown>)=>api('/admin/products',{method:'POST',body:JSON.stringify({...p,id})});
-export const uploadMedia=(file:File)=>{const form=new FormData();form.append('file',file);return api<{url?:string;imageUrl?:string}>('/admin/media',{method:'POST',body:form})};
+export const uploadMedia=(productId:number|string,file:File)=>{const form=new FormData();form.append('productId',String(productId));form.append('file',file);return api<{url?:string;imageUrl?:string}>('/admin/media',{method:'POST',body:form})};
 export const getAdminOrders=async()=>list(await api<unknown>('/admin/orders'),'orders');
 export const updateOrderStatus=(orderId:number|string,status:string)=>api('/admin/orders/status',{method:'POST',body:JSON.stringify({orderId,status})});
