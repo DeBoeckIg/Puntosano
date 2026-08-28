@@ -98,6 +98,14 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
   .admin-list button,.admin-row button{font-size:14px}
 }
 
+/* Catalog controls stay visible and actionable on narrow screens. */
+@media(max-width:700px){
+  .products-page .filters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;overflow:visible;width:100%;max-width:none;margin-inline:0;padding:0}
+  .products-page .filters button{width:100%;min-width:0;min-height:44px;padding:10px 8px;white-space:normal;line-height:1.2}
+}
+.product-image .product-add{min-width:44px;min-height:44px;padding:10px 12px;border-radius:999px;background:#f7f6ee;color:#183f32;font-size:13px;font-weight:600}
+.product-image .product-add:hover{background:#dceadf}
+
 @media(max-width:700px){
   .shop{padding-left:18px;padding-right:18px}
   .products-page h2{font-size:46px}
