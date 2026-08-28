@@ -37,6 +37,7 @@ html{scroll-behavior:smooth}body{overflow-x:hidden}header{animation:content-ente
 .products-page .filters button:focus-visible{outline:2px solid #71a86d;outline-offset:5px;border-radius:2px}
 @media(max-width:700px){.products-page{padding-top:44px;padding-bottom:58px}.products-page .eyebrow{margin-bottom:14px}.products-page h2{margin-bottom:20px}.products-page .filters{gap:20px;margin-bottom:28px}}
 @media(prefers-reduced-motion:reduce){.products-page .filters button,.products-page .filters button::after{transition:none}}
+.admin-access-state{min-height:calc(100vh - 84px);display:grid;place-items:center;text-align:center}.admin-access-state .admin-card{width:min(560px,100%)}
 
 /* Accessibility and narrow-screen safeguards */
 button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #2f7654;outline-offset:3px}button:disabled{cursor:not-allowed;opacity:.55}.mobile-menu,.bag,.drawer-head button,.quantity button,.product-image button{min-width:44px;min-height:44px;display:inline-flex;align-items:center;justify-content:center}.product-image img{display:block;width:100%;height:100%;object-fit:cover}.product-image button{position:absolute}.filters{max-width:100%}.admin-row,.order-row{min-width:0}.admin-row>*{min-width:0}.admin-row button,.admin-list button{min-height:44px;white-space:nowrap}.admin-card input,.admin-card select,.admin-card textarea{font-size:16px}.modal{z-index:10}.drawer{max-width:100vw;overflow-y:auto}.cart-item span:first-child{min-width:0;overflow-wrap:anywhere}
@@ -95,6 +96,20 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
   .admin-row small{font-size:13px}
   .admin-list li{font-size:15px;gap:12px}
   .admin-list button,.admin-row button{font-size:14px}
+}
+
+@media(max-width:700px){
+  .shop{padding-left:18px;padding-right:18px}
+  .products-page h2{font-size:46px}
+  .products-page .filters{gap:10px}
+  .products-page .filters button{font-size:15px;padding:10px 14px}
+  .grid{grid-template-columns:1fr;gap:24px}
+  .product-image{height:clamp(220px,70vw,320px)}
+  .product h3{font-size:20px}
+  .product p{font-size:15px}
+  .product-info>strong{font-size:17px}
+  .admin-page{padding-left:16px;padding-right:16px}
+  .admin-card{padding-left:16px;padding-right:16px}
 }
 
 .products-page .filters,
