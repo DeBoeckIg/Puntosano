@@ -42,6 +42,61 @@ html{scroll-behavior:smooth}body{overflow-x:hidden}header{animation:content-ente
 button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #2f7654;outline-offset:3px}button:disabled{cursor:not-allowed;opacity:.55}.mobile-menu,.bag,.drawer-head button,.quantity button,.product-image button{min-width:44px;min-height:44px;display:inline-flex;align-items:center;justify-content:center}.product-image img{display:block;width:100%;height:100%;object-fit:cover}.product-image button{position:absolute}.filters{max-width:100%}.admin-row,.order-row{min-width:0}.admin-row>*{min-width:0}.admin-row button,.admin-list button{min-height:44px;white-space:nowrap}.admin-card input,.admin-card select,.admin-card textarea{font-size:16px}.modal{z-index:10}.drawer{max-width:100vw;overflow-y:auto}.cart-item span:first-child{min-width:0;overflow-wrap:anywhere}
 @media(max-width:700px){.grid{min-width:0}.product-image{height:clamp(150px,45vw,190px)}.checkout-card,.admin-card{max-width:100%;overflow:hidden}.order-summary{overflow-wrap:anywhere}.admin-row{overflow:hidden}.admin-row span{overflow-wrap:anywhere}.admin-row small{white-space:normal}.drawer{width:min(100vw,420px);padding:24px 20px}.drawer .button{width:100%;justify-content:center}.form-row{gap:0}.inline-form button{width:100%}}
 
+/* Mobile scale: use the viewport comfortably without sacrificing safe padding. */
+@media(max-width:700px){
+  header{height:80px;padding-inline:18px}
+  .logo{font-size:29px}
+  .header-actions{gap:10px}
+  .mobile-menu,.bag{min-width:48px;min-height:48px}
+  .mobile-menu svg,.bag svg{width:25px;height:25px}
+  .bag b{font-size:11px;width:19px;height:19px;padding-top:2px;top:-5px;right:-4px}
+  .mobile-nav{gap:8px;padding:14px 18px 20px}
+  .mobile-nav a{font-size:16px;padding:10px 0}
+  .hero{padding:48px 18px 56px}
+  .hero .eyebrow,.products-page .eyebrow,.checkout .eyebrow,.admin-page .eyebrow{font-size:11px;letter-spacing:1.7px;margin-bottom:20px}
+  .hero h1{font-size:clamp(44px,12vw,54px)}
+  .hero-copy{font-size:16px;line-height:1.65;margin:24px 0 28px}
+  .button{min-height:50px;padding:14px 20px;font-size:14px;gap:16px}
+  .hero-art{height:min(78vw,350px);margin-top:38px;padding:24px}
+  .categories{padding:52px 18px}
+  .categories h2,.section-title h2{font-size:40px}
+  .category-cards{gap:12px}
+  .category-cards a{min-height:128px;padding:17px;font-size:14px}
+  .category-cards a small{font-size:12px}
+  .shop{padding-inline:18px}
+  .products-page{padding-top:50px;padding-bottom:64px}
+  .products-page h2{font-size:42px;line-height:1.08;margin-bottom:25px}
+  .products-page .filters{gap:12px;margin-inline:-2px;margin-bottom:30px;padding-bottom:8px}
+  .products-page .filters button{font-size:14px;padding:10px 12px;min-height:44px;background:#eef5eb;border-radius:999px}
+  .products-page .filters button.selected{background:#dceadf}
+  .products-page .filters button::after{display:none}
+  .grid{gap:30px 12px}
+  .product-image{height:clamp(170px,48vw,220px)}
+  .product-image button{width:48px;height:48px;font-size:25px}
+  .product h3{font-size:17px;line-height:1.2;margin-top:12px}
+  .product p{font-size:13px;line-height:1.45;margin-top:7px}
+  .product-info>strong{font-size:15px}
+  .drawer{padding:26px 20px;font-size:16px}
+  .drawer-head h2{font-size:30px}
+  .cart-item{gap:14px;padding:10px 0;font-size:16px}
+  .quantity{gap:4px}.quantity button{min-width:44px;min-height:44px}
+  .checkout{padding:34px 18px}
+  .checkout-card{margin:34px 0;padding:28px 20px}
+  .checkout-card h1{font-size:40px}
+  .checkout-card label{font-size:15px}
+  .checkout-card input,.checkout-card select{min-height:50px}
+  .order-summary{font-size:16px;line-height:1.55}
+  .admin-page{padding:36px 18px}
+  .admin-card{padding:22px 18px}
+  .admin-card h1,.admin-card h2,.admin-page h1{font-size:34px}
+  .admin-card label{font-size:15px}
+  .admin-row{font-size:15px;padding:14px}
+  .admin-row b{font-size:16px}
+  .admin-row small{font-size:13px}
+  .admin-list li{font-size:15px;gap:12px}
+  .admin-list button,.admin-row button{font-size:14px}
+}
+
 .products-page .filters,
 .products-page .filters button,
 .products-page .filters button::after{border-bottom:0!important;box-shadow:none!important}
