@@ -27,7 +27,7 @@ html{scroll-behavior:smooth}body{overflow-x:hidden}header{animation:content-ente
 .products-page{padding-top:72px;padding-bottom:80px}
 .products-page .eyebrow{margin-bottom:16px}
 .products-page h2{margin-bottom:24px}
-.products-page .filters{gap:24px;margin-bottom:36px;padding-bottom:10px;overflow-x:auto;scrollbar-width:none}
+.products-page .filters{gap:24px;margin-bottom:36px;padding-bottom:10px;overflow-x:auto;scrollbar-width:none;border-bottom:0}
 .products-page .filters::-webkit-scrollbar{display:none}
 .products-page .filters button{position:relative;padding:4px 0;color:#779188;font-size:12px;white-space:nowrap;transition:color .2s ease}
 .products-page .filters button::after{content:"";position:absolute;left:0;right:0;bottom:-11px;height:2px;background:#2f7654;transform:scaleX(0);transform-origin:center;transition:transform .2s ease}
