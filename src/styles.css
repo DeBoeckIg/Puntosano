@@ -41,4 +41,4 @@ html{scroll-behavior:smooth}body{overflow-x:hidden}header{animation:content-ente
 .products-page .filters,
 .products-page .filters button,
 .products-page .filters button::after{border-bottom:0!important;box-shadow:none!important}
-.products-page .filters button::after{display:none}
+.products-page .filters button::after{display:block}
