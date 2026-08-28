@@ -100,10 +100,13 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 
 /* Catalog controls stay visible and actionable on narrow screens. */
 @media(max-width:700px){
-  .products-page .filters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;overflow:visible;width:100%;max-width:none;margin-inline:0;padding:0}
-  .products-page .filters button{width:100%;min-width:0;min-height:44px;padding:10px 8px;white-space:normal;line-height:1.2}
+  .products-page .filters{display:flex;gap:10px;overflow-x:auto;overflow-y:hidden;width:100%;max-width:none;margin-inline:0;padding:0 0 8px;scrollbar-width:none;white-space:nowrap}
+  .products-page .filters::-webkit-scrollbar{display:none}
+  .products-page .filters button{flex:0 0 auto;width:auto;min-width:max-content;min-height:44px;padding:10px 14px;white-space:nowrap;line-height:1.2}
 }
 .product-image .product-add{min-width:44px;min-height:44px;padding:10px 12px;border-radius:999px;background:#f7f6ee;color:#183f32;font-size:13px;font-weight:600}
+.product-image .product-add{width:auto;white-space:nowrap}
+.product-image{height:auto;aspect-ratio:4/3}.admin-row>img{aspect-ratio:4/3;height:auto}
 .product-image .product-add:hover{background:#dceadf}
 
 @media(max-width:700px){
