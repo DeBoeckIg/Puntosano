@@ -168,3 +168,11 @@ header:has(+ .products-page) .bag b{top:1px;right:1px;width:17px;height:17px;pad
 .checkout-item{display:grid;grid-template-columns:48px minmax(0,1fr) auto;gap:12px;align-items:center;padding:8px 0}.checkout-item img{width:48px;height:48px;margin:0;flex:none}.checkout-item-info{min-width:0}.checkout-item-info strong{display:block;margin:0;padding:0;border:0;overflow-wrap:anywhere}.checkout-item-info span,.checkout-item-price span{font-size:12px;color:#70877d}.checkout-item-price{text-align:right;min-width:145px}.checkout-total{display:block;text-align:right;margin-top:8px!important;padding-top:12px;border-top:1px solid #dce3d9}
 .order-summary-heading{display:grid;grid-template-columns:minmax(0,1fr) 145px;gap:12px;padding:0 0 8px;color:#70877d;font-size:12px;font-weight:600;text-align:right}.order-summary-heading span:first-child{text-align:left}.confirmation-page .checkout-card>svg{color:#2f7654;margin:0 0 12px}.confirmation-instruction{max-width:560px;font-size:16px;line-height:1.6;color:#587066}.confirmation-sent{padding:12px 16px;border-radius:10px;background:#dceadf;color:#2f7654;font-weight:600}.confirmation-page .button{margin-top:14px}
 @media(max-width:520px){.checkout-item{grid-template-columns:44px minmax(0,1fr);gap:10px}.checkout-item img{width:44px;height:44px}.checkout-item-price{grid-column:2;text-align:left;min-width:0}.checkout-total{text-align:right}}
+.confirmation-page .checkout-card{text-align:center}
+.confirmation-page .checkout-card>svg{display:block;width:52px;height:52px;margin:0 auto 18px;color:#2f7654}
+.confirmation-page .confirmation-instruction{margin:18px auto;max-width:560px}
+.confirmation-page .confirmation-whatsapp{display:flex;width:min(100%,420px);margin:22px auto 0;justify-content:center;background:#2f7654;color:#f7f6ee;border-color:#2f7654}
+.confirmation-page .confirmation-whatsapp:hover{background:#183f32;border-color:#183f32}
+.confirmation-page .confirmation-catalog-link{display:block;width:fit-content;margin:22px auto 0;color:#2f7654;font-weight:600;text-decoration:none}
+.confirmation-page .confirmation-catalog-link:hover{text-decoration:underline}
+.confirmation-page .confirmation-sent{margin:16px auto 0;width:fit-content}
