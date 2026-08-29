@@ -3,6 +3,10 @@
     {
       "source": "/api/:path*",
       "destination": "https://pedi-d.vercel.app/api/:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
