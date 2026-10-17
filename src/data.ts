@@ -1,4 +1,5 @@
-export type Product = { id:string; name:string; category:string; price:number; description:string; image:string; badge?:string; available?:boolean };
+export type ProductVariant = { id:string; name:string; price:number; available:boolean; stockQuantity?:number; published?:boolean; visible?:boolean };
+export type Product = { id:string; name:string; category:string; price:number; description:string; image:string; images?:string[]; variants?:ProductVariant[]; variantId?:string; variantLabel?:string; badge?:string; available?:boolean; adminImages?:import('./client').AdminImage[] };
 export const categories = ['Todos los productos','Frutos congelados','Miel','Aceites','Pastas y Harinas'];
 export const products: Product[] = [
  {id:'1',name:'Mix de frutos rojos',category:'Frutos congelados',price:14,description:'Frutillas, arándanos y frambuesas listas para disfrutar.',image:'https://images.unsplash.com/photo-1498557850523-fd3d118b962e?w=900&q=85',badge:'Más elegido'},

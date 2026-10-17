@@ -1,0 +1,10 @@
+{
+  "name": "Rocío Atzori Admin",
+  "short_name": "Rocío Admin",
+  "start_url": "/admin",
+  "scope": "/admin",
+  "display": "standalone",
+  "theme_color": "#FF623F",
+  "background_color": "#fffaf5",
+  "icons": [{ "src": "/pwa-icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}
