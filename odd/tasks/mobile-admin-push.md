@@ -43,5 +43,5 @@ Delegated direct implementation: the work spans multiple non-trivial files in tw
 Configure deployment secrets and run the HTTPS/mobile verification after deploy. Unit tests do not prove browser push delivery or Vercel scheduling.
 
 ## Commit evidence
-- rociAtz: `b148630 feat(admin): add mobile push notifications`
+- rociAtz: `9ca2af2 feat(admin): add mobile push notifications`
 - pediD: `0f86733 feat(push): add admin notifications and catalog updates`
