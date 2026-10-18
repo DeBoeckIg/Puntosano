@@ -7,7 +7,7 @@
 .checkout-summary-title {
   margin: 0 0 10px;
   color: var(--ps-charcoal, #3f3d42);
-  font: 600 18px/1.2 'DM Sans', sans-serif;
+  font: 600 18px/1.2 var(--font-body, 'Poppins', sans-serif);
   letter-spacing: 0;
   text-transform: uppercase;
 }
