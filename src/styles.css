@@ -40,6 +40,10 @@
 .admin-orders .order-card .status-field{flex:0 0 150px;margin:0}
  .admin-orders .order-card .status-field select{width:100%;min-height:40px;margin:0;padding:8px 34px 8px 12px;border:1px solid #b9d1bc;border-radius:999px;background:#eef5eb;color:#183f32;font:inherit;font-size:12px;font-weight:600;appearance:none;background-image:linear-gradient(45deg,transparent 50%,#2f7654 50%),linear-gradient(135deg,#2f7654 50%,transparent 50%);background-position:calc(100% - 15px) 17px,calc(100% - 10px) 17px;background-size:5px 5px,5px 5px;background-repeat:no-repeat}
  .admin-orders .order-card .status-field select:focus{outline:2px solid #71a86d;outline-offset:2px}
+ .admin-orders .order-card.order-status-pending .status-field select{border-color:#9aa5a0;background-color:#f0f2f0;color:#4f5b55;background-image:linear-gradient(45deg,transparent 50%,#68756e 50%),linear-gradient(135deg,#68756e 50%,transparent 50%)}
+ .admin-orders .order-card.order-status-confirmed .status-field select{border-color:#d98a3a;background-color:#fff1df;color:#8a541f;background-image:linear-gradient(45deg,transparent 50%,#b66b23 50%),linear-gradient(135deg,#b66b23 50%,transparent 50%)}
+ .admin-orders .order-card.order-status-completed .status-field select{border-color:#71a86d;background-color:#eef5eb;color:#315b48;background-image:linear-gradient(45deg,transparent 50%,#2f7654 50%),linear-gradient(135deg,#2f7654 50%,transparent 50%)}
+ .admin-orders .order-card.order-status-cancelled .status-field select{border-color:#c95858;background-color:#fff1f0;color:#8f1e1e;background-image:linear-gradient(45deg,transparent 50%,#a12626 50%),linear-gradient(135deg,#a12626 50%,transparent 50%)}
  .admin-orders .order-card .delete-order-button{margin-top:16px;min-height:44px;padding:7px 10px;border:1px solid #e6b7b3;border-radius:999px;background:#fff1f0;color:#a12626;font:inherit;font-size:12px;font-weight:600;cursor:pointer}
  .admin-orders .order-card .delete-order-button:hover{background:#fbe0dd;border-color:#c85a52;color:#8f1e1e}
  .admin-orders .order-card .delete-order-button:focus-visible{outline:3px solid #2f7654;outline-offset:3px}
