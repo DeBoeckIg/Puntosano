@@ -80,10 +80,26 @@
 }
 
 /* Image actions remain centered and inside each card at every width. */
+.admin-catalog .product-editor .admin-image-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .admin-catalog .product-editor .admin-image-card,
 .admin-catalog .product-editor .admin-image-controls {
   min-width: 0;
   box-sizing: border-box;
+}
+
+@media (max-width: 700px) {
+  .admin-catalog .product-editor .admin-image-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 440px) {
+  .admin-catalog .product-editor .admin-image-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .admin-catalog .product-editor .admin-image-controls {
@@ -107,6 +123,20 @@
   grid-column: 1 / -1;
   width: 100% !important;
   min-width: 0;
+  border-color: var(--ps-coral-dark, #d9472d) !important;
+  background: var(--ps-coral, #ff623f) !important;
+  color: var(--ps-white, #fff) !important;
+  box-shadow: 0 5px 12px rgb(217 71 45 / 22%);
+}
+
+.admin-catalog .product-editor .admin-image-controls .image-remove-button:hover {
+  border-color: var(--ps-coral-dark, #d9472d) !important;
+  background: var(--ps-coral-dark, #d9472d) !important;
+}
+
+.admin-catalog .product-editor .admin-image-controls .image-remove-button:focus-visible {
+  outline: 3px solid var(--ps-coral, #ff623f);
+  outline-offset: 3px;
 }
 
 @media (max-width: 560px) {
