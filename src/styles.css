@@ -40,9 +40,9 @@
 .admin-orders .order-card .status-field{flex:0 0 150px;margin:0}
  .admin-orders .order-card .status-field select{width:100%;min-height:40px;margin:0;padding:8px 34px 8px 12px;border:1px solid #b9d1bc;border-radius:999px;background:#eef5eb;color:#183f32;font:inherit;font-size:12px;font-weight:600;appearance:none;background-image:linear-gradient(45deg,transparent 50%,#2f7654 50%),linear-gradient(135deg,#2f7654 50%,transparent 50%);background-position:calc(100% - 15px) 17px,calc(100% - 10px) 17px;background-size:5px 5px,5px 5px;background-repeat:no-repeat}
  .admin-orders .order-card .status-field select:focus{outline:2px solid #71a86d;outline-offset:2px}
-.admin-orders .order-card .delete-order-button{margin-top:16px;padding:9px 13px;border:1px solid #d9a09a;border-radius:999px;background:#fff5f2;color:#a14f4a;font:inherit;font-size:12px;font-weight:600;cursor:pointer}
-.admin-orders .order-card .delete-order-button:hover{background:#f7e1dc;border-color:#c95858}
-.admin-orders .order-card .delete-order-button:focus-visible{outline:2px solid #c95858;outline-offset:2px}
+ .admin-orders .order-card .delete-order-button{margin-top:16px;min-height:44px;padding:7px 10px;border:1px solid transparent;border-radius:999px;background:transparent;color:#a14f4a;font:inherit;font-size:12px;font-weight:600;cursor:pointer}
+ .admin-orders .order-card .delete-order-button:hover{background:#dceadf}
+ .admin-orders .order-card .delete-order-button:focus-visible{outline:3px solid #2f7654;outline-offset:3px}
 .admin-orders .order-card-section{min-width:0;margin:0 0 16px;padding:0 0 16px;border-top:0;border-bottom:1px solid #edf1eb}
 .admin-orders .order-card-section h3{margin:0 0 10px;font-size:14px;color:#183f32}
 .admin-orders .order-card-section p{margin:0;overflow-wrap:anywhere}
