@@ -51,9 +51,9 @@
 .admin-orders .order-card-section h3{margin:0 0 10px;font-size:14px;color:#183f32}
 .admin-orders .order-card-section p{margin:0;overflow-wrap:anywhere}
 .admin-orders .order-customer-contact{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin-top:10px;color:#587066}
-.admin-orders .whatsapp-action{display:inline-flex;align-items:center;min-height:40px;padding:8px 14px;border-radius:999px;background:#2f7654;color:#fff;font-weight:700;text-decoration:none}
-.admin-orders .whatsapp-action:hover{background:#255e43}
-.admin-orders .whatsapp-action:focus-visible{outline:3px solid #71a86d;outline-offset:3px}
+ .admin-orders .whatsapp-action{display:inline-flex;align-items:center;min-height:44px;padding:7px 10px;border:1px solid #b9d1bc;border-radius:999px;background:#f7faf4;color:#315b48;font:inherit;font-size:12px;font-weight:600;text-decoration:none}
+ .admin-orders .whatsapp-action:hover{background:#dceadf;border-color:#71a86d}
+ .admin-orders .whatsapp-action:focus-visible{outline:3px solid #2f7654;outline-offset:3px}
 .admin-orders .order-products{display:grid;gap:6px;margin:0;padding:0 0 0 18px;list-style:none}
 .admin-orders .order-products li{margin:0;overflow-wrap:anywhere}
 .admin-orders .order-products small{display:block;color:#70877d;font-size:12px}
