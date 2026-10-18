@@ -43,7 +43,9 @@ Add a protected administrator dashboard with trustworthy operational and sales m
 Delegated direct implementation: the dashboard spans backend aggregation, frontend route/navigation, styling, and tests across two repositories.
 
 ## Progress
-- Backend aggregation/API, focused tests, frontend view, navigation entry, and responsive styling implemented. App route wiring remains to be completed.
+- Backend aggregation/API, focused tests, frontend view, navigation entry, responsive styling, and `/admin/statistics` route wiring implemented.
+- Verification passed: pediD 124 tests and build; rociAtz 10 tests and build; `git diff --check` passed in both repositories.
+- Commits: pediD `8744a5b`; rociAtz `2090d3e`.
 
 ## Next step
-Implement DASH-1 with server-side aggregation and focused tests, then build the protected UI slice.
+Deploy both projects and verify the dashboard with real date ranges and production data.
