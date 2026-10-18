@@ -558,6 +558,9 @@ body{background:var(--ps-bg);color:var(--ps-charcoal)}header{background:var(--ps
 .admin-page:has(> .admin-grid) .admin-grid a:active{background:#ffe5d6;box-shadow:0 5px 12px rgb(63 61 66 / 12%);transform:translateY(1px)}
 .admin-page:has(> .admin-grid) .admin-grid a:focus-visible{outline:3px solid var(--ps-coral);outline-offset:4px}
 .admin-page:has(> .admin-grid) .admin-grid a[aria-disabled='true'],.admin-page:has(> .admin-grid) .admin-grid a.disabled{pointer-events:none;opacity:.5;background:var(--ps-bg);box-shadow:none}
+.admin-page:has(> .admin-menu) .admin-menu a::before,.admin-page:has(> .admin-menu) .admin-menu a::after{content:none}
+.admin-page:has(> .admin-menu) .admin-menu a{border-bottom:1px solid var(--ps-border);}
+.admin-page:has(> .admin-menu) .admin-logout{margin-top:20px;}
 @media(min-width:701px){
   .admin-page:has(> .admin-grid){max-width:960px;margin-inline:auto}
   .admin-page:has(> .admin-grid)>h1{margin-bottom:42px}
