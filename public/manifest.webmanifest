@@ -1,6 +1,6 @@
 {
   "name": "Rocío Atzori Admin",
-  "short_name": "Rocío Admin",
+  "short_name": "Punto Sano",
   "start_url": "/admin",
   "scope": "/admin",
   "display": "standalone",
