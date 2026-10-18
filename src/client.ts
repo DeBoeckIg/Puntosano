@@ -90,3 +90,4 @@ export const getAdminCarousel=()=>api<CarouselSlide[]>('/admin/carousel');
 export const uploadCarousel=(file:File)=>{const form=new FormData();form.append('file',file,file.name);form.append('action','add');return api('/admin/carousel',{method:'POST',body:form});};
 export const deleteCarousel=(id:string)=>api(`/admin/carousel?id=${encodeURIComponent(id)}`,{method:'DELETE'});
 export const reorderCarousel=(ids:string[])=>api('/admin/carousel',{method:'POST',body:JSON.stringify({action:'reorder',ids})});
+export const getAdminStatistics=(filters:{from?:string;to?:string}={})=>api<any>(`/admin/statistics?${new URLSearchParams(Object.entries(filters).filter(([,v])=>v) as string[][])}`);
