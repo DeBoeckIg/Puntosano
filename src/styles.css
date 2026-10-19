@@ -44,7 +44,10 @@
  .admin-orders .order-card.order-status-confirmed .status-field select{border-color:#d98a3a;background-color:#fff1df;color:#8a541f;background-image:linear-gradient(45deg,transparent 50%,#b66b23 50%),linear-gradient(135deg,#b66b23 50%,transparent 50%)}
  .admin-orders .order-card.order-status-completed .status-field select{border-color:#71a86d;background-color:#dceadf;color:#315b48;background-image:linear-gradient(45deg,transparent 50%,#2f7654 50%),linear-gradient(135deg,#2f7654 50%,transparent 50%)}
  .admin-orders .order-card.order-status-cancelled .status-field select{border-color:#c95858;background-color:#fff1f0;color:#8f1e1e;background-image:linear-gradient(45deg,transparent 50%,#a12626 50%),linear-gradient(135deg,#a12626 50%,transparent 50%)}
- .admin-orders .order-card .delete-order-button{margin-top:16px;min-height:44px;padding:7px 10px;border:1px solid #e6b7b3;border-radius:999px;background:#fff1f0;color:#a12626;font:inherit;font-size:12px;font-weight:600;cursor:pointer}
+  .admin-orders .order-card .reopen-order-button{min-height:40px;padding:8px 12px;border:1px solid #c95858;border-radius:999px;background:#fff1f0;color:#8f1e1e;font:inherit;font-size:12px;font-weight:600;cursor:pointer;white-space:nowrap}
+  .admin-orders .order-card .delete-order-button{margin-top:16px;min-height:44px;padding:7px 10px;border:1px solid #e6b7b3;border-radius:999px;background:#fff1f0;color:#a12626;font:inherit;font-size:12px;font-weight:600;cursor:pointer}
+  .admin-orders .order-card .reopen-order-button:hover{background:#fbe0dd;border-color:#c85a52;color:#8f1e1e}
+  .admin-orders .order-card .reopen-order-button:focus-visible{outline:3px solid #2f7654;outline-offset:3px}
  .admin-orders .order-card .delete-order-button:hover{background:#fbe0dd;border-color:#c85a52;color:#8f1e1e}
  .admin-orders .order-card .delete-order-button:focus-visible{outline:3px solid #2f7654;outline-offset:3px}
 .admin-orders .order-card-section{min-width:0;margin:0 0 16px;padding:0 0 16px;border-top:0;border-bottom:1px solid #edf1eb}
@@ -62,7 +65,7 @@
 .admin-orders .order-card-meta strong{display:block;overflow-wrap:anywhere}
 .admin-orders .order-total{text-align:right}
 .admin-orders .order-total strong{font-size:20px;color:#d86d35}
-  @media(max-width:700px){.admin-orders .order-card{padding:16px}.admin-orders .order-card-header>div{display:flex;flex-wrap:wrap;gap:12px}.admin-orders .order-reference{gap:6px}.admin-orders .order-fulfillment{flex-basis:100%}.admin-orders .order-card-header>div>button{order:1;max-width:100%;margin-top:0}.admin-orders .order-card .status-field{order:2;width:100%;margin-top:0}.admin-orders .order-card .status-field select{min-height:44px}.admin-orders .order-card-meta{grid-template-columns:1fr;gap:12px}.admin-orders .order-total{text-align:left}}
+  @media(max-width:700px){.admin-orders .order-card{padding:16px}.admin-orders .order-card-header>div{display:flex;flex-wrap:wrap;gap:12px}.admin-orders .order-reference{gap:6px}.admin-orders .order-fulfillment{flex-basis:100%}.admin-orders .order-card-header>div>button{order:1;max-width:100%;margin-top:0}.admin-orders .order-card .reopen-order-button{min-height:44px}.admin-orders .order-card .status-field{order:2;flex:1 1 150px;width:auto;margin-top:0}.admin-orders .order-card .status-field select{min-height:44px}.admin-orders .order-card-meta{grid-template-columns:1fr;gap:12px}.admin-orders .order-total{text-align:left}}
 .products-page .eyebrow{margin-bottom:30px}.products-page h2{margin-top:0;margin-bottom:34px}.products-page .filters{margin-bottom:48px}.products-page .grid{margin-top:0}
 @media(max-width:700px){.products-page .eyebrow{margin-bottom:22px}.products-page h2{margin-bottom:26px}.products-page .filters{margin-bottom:32px}}
 
