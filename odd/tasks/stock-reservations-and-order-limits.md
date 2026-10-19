@@ -24,7 +24,7 @@ Prevent fake or abandoned orders from consuming all inventory while preserving t
 - [x] STOCK-1: Add idempotent migration for reservation metadata, phone limits, expiry cleanup, and atomic stock restoration.
 - [x] STOCK-2: Wire checkout, admin status cancellation, deletion, and admin reads to the database behavior.
 - [ ] STOCK-3: Add focused tests for limits, expiry, cancellation, deletion, and concurrent-safe restoration.
-- [ ] STOCK-4: Allow admins to reopen only orders cancelled by reservation expiry when stock is available.
+- [x] STOCK-4: Allow admins to reopen only orders cancelled by reservation expiry when stock is available.
 
 ## Acceptance criteria
 - A third active pending order for the same normalized phone is rejected.
@@ -46,6 +46,7 @@ Delegated direct implementation: this spans Supabase migration/RPC behavior, che
 
 ## Progress
 - Migration 0026 corrected to preserve the complete 0023 checkout behavior, including push outbox enqueue and variant validation, and now serializes same-phone limit checks with a transaction-scoped advisory lock; local application tests pass, but remote SQL integration remains pending.
+- Migration 0028 adds cancellation reasons and an atomic reopen RPC; the protected admin API and frontend action are implemented. pediD: 125 tests and build passed; rociAtz: 10 tests and build passed.
 
 ## Next step
-Implement STOCK-4 with a cancellation reason, an atomic reopen RPC, and a protected admin action.
+Apply migrations 0026–0028 with `supabase db push`, then run production tests for expiry, stock restoration, and reopening when stock is available or insufficient.
