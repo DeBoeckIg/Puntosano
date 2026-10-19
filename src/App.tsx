@@ -39,7 +39,7 @@ function CartDrawer({items,cart,total,close,closing,increment,decrement,remove,c
    const load=()=>{setLoading(true);setLoadError('');return api.getAdminOrders().then(setOrders).catch(e=>setLoadError(error(e))).finally(()=>setLoading(false))};
  useEffect(()=>{void load()},[]);
   const shown=orders.filter(o=>(!filters.ref||String(o.reference||o.orderReference||'').toLowerCase().includes(filters.ref.toLowerCase()))&&(!filters.from||String(o.createdAt||'').slice(0,10)>=filters.from)&&(!filters.to||String(o.createdAt||'').slice(0,10)<=filters.to));
-   async function changeStatus(order:any,status:string){try{await api.updateOrderStatus(order.id,status);setOrders(current=>current.map(x=>x.id===order.id?{...x,status}:x));setMsg('Estado del pedido actualizado correctamente.')}catch(e){setMsg(toUserMessage(e,'session'))}}
+    async function changeStatus(order:any,status:string){if(order.status==='completed'&&status==='cancelled'){showNotification('No se puede cancelar un pedido completado.');return}try{await api.updateOrderStatus(order.id,status);setOrders(current=>current.map(x=>x.id===order.id?{...x,status}:x));setMsg('Estado del pedido actualizado correctamente.')}catch(e){showNotification(toUserMessage(e,'session'))}}
       function deleteOrder(order:any){setPendingDelete(order)}
       async function confirmDelete(){if(!pendingDelete||deleteBusy)return;setDeleteBusy(true);try{await api.deleteAdminOrder(pendingDelete.id);setOrders(current=>current.filter(x=>x.id!==pendingDelete.id));setMsg('Pedido borrado correctamente.');setPendingDelete(null)}catch(e){setMsg(toUserMessage(e,'session'))}finally{setDeleteBusy(false)}}
     const customerPhone=(order:any)=>String(order.customerPhone??order.customer_phone??'').trim();
